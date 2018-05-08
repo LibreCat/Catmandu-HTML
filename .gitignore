@@ -1,0 +1,13 @@
+!.gitignore
+.DS_Store
+*.swp
+.build
+_build
+blib
+Build
+Makefile.PL
+MYMETA.*
+Catmandu-HTML-*
+local
+.perl-version
+cpanfile.snapshot
