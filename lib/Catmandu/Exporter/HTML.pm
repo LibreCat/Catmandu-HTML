@@ -40,6 +40,7 @@ sub add {
 
 sub commit {
     my $self = $_[0];
+    $self->fh->close;
 }
 
 1;
