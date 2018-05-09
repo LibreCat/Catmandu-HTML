@@ -7,8 +7,6 @@ use Catmandu;
 use Catmandu::Importer::HTML;
 use Digest::MD5 qw(md5_hex);
 
-use Data::Dumper;
-
 my $pkg;
 
 BEGIN {
