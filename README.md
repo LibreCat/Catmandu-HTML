@@ -1,34 +1,37 @@
 # NAME
 
-Catmandu::Exporter::HTML - a HTML exporter
+Catmandu::HTML - Modules for handling HTML data within the Catmandu framework
 
 # SYNOPSIS
 
-    # From the commandline
-    $ catmandu convert HTML --fix myfixes to HTML < ex/test.html
+Command line client `catmandu`:
 
-    # From Perl
+    catmandu convert HTML to JSON < ex/test.html > data/test.json
 
-    use Catmandu;
+    catmandu convert JSON to HTML < data/test.json > ex/test.html
 
-    # Print to STDOUT
-    my $exporter = Catmandu->exporter('HTML');
+See documentation of modules for more examples.
 
-    $exporter->add_many($arrayref);
-    $exporter->add_many($iterator);
-    $exporter->add_many(sub { });
+# AVAILABLE MODULES
 
-    $exporter->add($hashref);
+- [Catmandu::Exporter::HTML](https://metacpan.org/pod/Catmandu::Exporter::HTML)
 
-    printf "exported %d objects\n" , $exporter->count;
+    Serialize HTML data
 
-    # Get an array ref of all records exported
-    my $data = $exporter->as_arrayref;
+- [Catmandu::Importer::HTML](https://metacpan.org/pod/Catmandu::Importer::HTML)
 
-# DESCRIPTION
-
-This is a [Catmandu::Exporter](https://metacpan.org/pod/Catmandu::Exporter) for converting Perl into HTML.
+    Parse HTML data
 
 # SEE ALSO
 
-[Catmandu::Importer::LIDO](https://metacpan.org/pod/Catmandu::Importer::LIDO), [HTML::TokeParser](https://metacpan.org/pod/HTML::TokeParser)
+This module is based on [Catmandu](https://metacpan.org/pod/Catmandu)
+
+# AUTHORS
+
+- Patrick Hochstenbach, `patrick.hochstenbach at ugent.be`
+
+# COPYRIGHT AND LICENSE
+
+The Perl software is copyright (c) 2018 by Patrick Hochstenbach.
+This is free software; you can redistribute it and/or modify it under the same
+terms as the Perl 5 programming language system itself.

@@ -1,5 +1,5 @@
 {
-   "abstract" : "a HTML exporter",
+   "abstract" : "Modules for handling HTML data within the Catmandu framework",
    "author" : [
       "Patrick Hochstenbach"
    ],
