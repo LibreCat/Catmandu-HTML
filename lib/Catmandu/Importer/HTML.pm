@@ -1,9 +1,8 @@
 package Catmandu::Importer::HTML;
 
-use Catmandu::Sane;
-
 our $VERSION = '0.01';
 
+use Catmandu::Sane;
 use Moo;
 use HTML::TokeParser;
 use namespace::clean;

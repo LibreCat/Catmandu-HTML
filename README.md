@@ -22,6 +22,10 @@ See documentation of modules for more examples.
 
     Parse HTML data
 
+- [Catmandu::Fix::html\_filter\_tag](https://metacpan.org/pod/Catmandu::Fix::html_filter_tag)
+
+    Filter HTML tags and optional group them
+
 # SEE ALSO
 
 This module is based on [Catmandu](https://metacpan.org/pod/Catmandu)

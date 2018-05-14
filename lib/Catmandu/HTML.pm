@@ -34,6 +34,10 @@ Serialize HTML data
 
 Parse HTML data
 
+=item L<Catmandu::Fix::html_filter_tag>
+
+Filter HTML tags and optional group them
+
 =back
 
 =head1 SEE ALSO

@@ -51,6 +51,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/LibreCat/Catmandu-HTML/issues"
+      },
+      "homepage" : "https://github.com/LibreCat/Catmandu-HTML",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/LibreCat/Catmandu-HTML.git",
+         "web" : "https://github.com/LibreCat/Catmandu-HTML"
+      }
+   },
    "version" : "0.01",
    "x_contributors" : [
       "Patrick Hochstenbach <patrick.hochstenbach@ugent.be>"
