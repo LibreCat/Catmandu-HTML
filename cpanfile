@@ -7,3 +7,5 @@ on 'test', sub {
 
 requires 'Catmandu', '0';
 requires 'HTML::TokeParser', '0';
+requires 'Moo', '0';
+requires 'namespace::clean', '0';
