@@ -38,7 +38,9 @@
       "runtime" : {
          "requires" : {
             "Catmandu" : "0",
-            "HTML::TokeParser" : "0"
+            "HTML::TokeParser" : "0",
+            "Moo" : "0",
+            "namespace::clean" : "0"
          }
       },
       "test" : {
@@ -64,6 +66,7 @@
    },
    "version" : "0.01",
    "x_contributors" : [
+      "Mohammad S Anwar <mohammad.anwar@yahoo.com>",
       "Patrick Hochstenbach <patrick.hochstenbach@ugent.be>"
    ],
    "x_serialization_backend" : "Cpanel::JSON::XS version 4.02"
