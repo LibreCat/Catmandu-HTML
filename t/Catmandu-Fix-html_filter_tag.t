@@ -28,7 +28,7 @@ my $record = Catmandu->importer('HTML',file => 't/muse.html')->first;
 {
     my $result = $pkg->new('meta',{group_by=>'name'})->fix($record);
 
-    is $result->{token}->{citation_publisher}->{content} , 'Advertising Educational Foundation';
+    is $result->{html}->{citation_publisher}->{content} , 'Advertising Educational Foundation';
 }
 
 done_testing;

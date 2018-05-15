@@ -15,7 +15,7 @@ has group_by => (fix_opt => 1);
 sub fix {
     my ($self,$data) = @_;
 
-    return $data unless Catmandu::Util::is_array_ref($data->{token});
+    return $data unless Catmandu::Util::is_array_ref($data->{html});
 
     my $tag = $self->tag;
     my $group_by = $self->group_by;
@@ -24,7 +24,7 @@ sub fix {
     my @token;
     my $token_rec;
 
-    for (@{$data->{token}}) {
+    for (@{$data->{html}}) {
         if ($_->[0] eq 'S' && $_->[1] =~ /^$tag$/) {
             if ($group_by) {
                 my $attrs = $_->[2];
@@ -52,10 +52,10 @@ sub fix {
     }
 
     if ($group_by) {
-        $data->{token} = $token_rec;
+        $data->{html} = $token_rec;
     }
     else {
-        $data->{token} = \@token
+        $data->{html} = \@token
     }
 
     return $data;
@@ -76,12 +76,18 @@ Catmandu::Fix::html_filter_tag - filter html tags
 
    # keep only the meta tags information
    html_filter_tag(meta)
+   # produces:
+   # ---
+   # html:
+   #   - [S,html,{},[],<html>]
+   #   - ...
+   #   - [E,html,</html>]
 
    # group all attributes of the meta tags grouped by name
    html_filter_tag(meta,group_by:name)
    # produces:
    # ---
-   # token:
+   # html:
    #  citation_author:
    #   content: Linda M. Scott
    #  citation_doi:

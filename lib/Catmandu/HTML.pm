@@ -36,7 +36,15 @@ Parse HTML data
 
 =item L<Catmandu::Fix::html_filter_tag>
 
-Filter HTML tags and optional group them
+Filter HTML by name and optional group them
+
+=item L<Catmandu::Fix::html_filter_type>
+
+Filter HTML by type
+
+=item L<Catmandu::Fix::html_text>
+
+Select only the literal text values from the HTML
 
 =back
 

@@ -22,7 +22,7 @@ sub generator {
         my $record = {};
 
         while (my $token = $parser->get_token) {
-            push @{$record->{token}} , $token;
+            push @{$record->{html}} , $token;
         }
 
         $record;

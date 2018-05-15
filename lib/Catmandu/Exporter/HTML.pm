@@ -11,7 +11,7 @@ with 'Catmandu::Exporter';
 sub add {
     my ($self,$data) = @_;
 
-    my $token = $data->{token} // [];
+    my $token = $data->{html} // [];
 
     for (@$token) {
         my $type = $_->[0];
