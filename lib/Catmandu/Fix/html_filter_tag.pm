@@ -1,6 +1,6 @@
 package Catmandu::Fix::html_filter_tag;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Catmandu::Sane;
 use Moo;

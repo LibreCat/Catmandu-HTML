@@ -1,6 +1,8 @@
 Revision history for Catmandu::HTML
 
 {{$NEXT}}
+
+0.02  2018-05-15 09:53:52 CEST
     - Updating dependencies
     - Adding html_filter_type
     - Adding html_text

@@ -64,7 +64,7 @@
          "web" : "https://github.com/LibreCat/Catmandu-HTML"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_contributors" : [
       "Mohammad S Anwar <mohammad.anwar@yahoo.com>",
       "Patrick Hochstenbach <patrick.hochstenbach@ugent.be>"

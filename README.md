@@ -10,6 +10,18 @@ Command line client `catmandu`:
 
     catmandu convert JSON to HTML < data/test.json > ex/test.html
 
+    # Keep the text
+    curl -s http://librecat.org |
+      catmandu convert HTML to Text --fix "html_text()"
+
+    # Filter out the anchors
+    curl -s http://librecat.org |
+      catmandu convert HTML to Text --fix "html_filter_tag(a); html_text(join:\"\n\")"
+
+    # Filter out the meta tags as YAML
+    curl -s http://librecat.org |
+      catmandu convert HTML to YAML --fix "html_filter_tag(meta, group_by:name)"
+
 See documentation of modules for more examples.
 
 # AVAILABLE MODULES
